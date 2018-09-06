@@ -2,7 +2,6 @@
 %html
     %head
         %link{href:"./app.css", rel:"stylesheet"}
-        %link{href:"https://cdn.jsdelivr.net/npm/flexboxgrid@6.3.1/dist/flexboxgrid.min.css", rel:"stylesheet"}
         %link{href:"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700", rel:"stylesheet"}
         %meta{charset:"utf-8"}
         %title index
@@ -12,6 +11,40 @@
                 .col-xs-10.col-sm-8.col-md-6
                     .box
                         %header.white-text.text-center
-                            %img{src:"img/taza.png", height:100}
-                                .init
-                                    Iniciamos en
+                            .inline-block
+                                %img{src:"img/taza.png", height:100}
+                                    .init
+                                        Iniciamos en
+                                    .restant-time
+                                        %span
+                                            01
+                                            %span DÍAS
+                                        %span :
+                                        %span
+                                            20
+                                            %span HORAS
+                                        %span :
+                                        %span
+                                            30
+                                            %span MINUTOS
+                            %h1.slim.title Chinchilla Software
+                            .top-space
+                                %a.btn.btn--yellow.black-text Contáctanos
+        .row.center-xs
+            .col-xs-12.col-sm-8
+                .box
+                    .card.z-depth.move-up.padding-50
+                        .container-80
+                            .row.separator
+                                .col-xs-12.col-sm-6
+                                    .box.text-left
+                                        %p.bold ¿Quiénes somos?
+                                        %p Un grupo de profesionales altamente capacitados en todas las áreas del desarrollo de software.
+                                .col-xs-12.col-sm-6
+                                    .box.text-rigth
+                                        %p.bold ¿Qué ofrecemos?
+                                        %ul.bullet-points
+                                            %li Desarrollo de software
+                                            %li Mantenimiento de sistemas
+                                            %li Consultoría
+                                            %li Capacitación
